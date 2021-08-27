@@ -35,7 +35,7 @@
           <div class="mt-4 grid grid-cols-6 gap-4">
             <button class="number-block rounded-xl font-semibold"
               v-for="index of 30" :key="index"
-              :class="{'checked': isChecked}"
+              :class="{'checked': numbers.indexOf(index)!= -1}"
               @click="onSelect(index)">
               {{index}}
             </button>
@@ -71,10 +71,8 @@ export default defineComponent({
         if(findIdx == -1) {
           numbers.value.push(index)
         } else {
-          numbers.value.splice(index, 1);
+          numbers.value.splice(findIdx, 1);
         }
-        
-        console.log(numbers.value);
       }
 
       return {
