@@ -11,7 +11,7 @@
         </div>
 
         <div class="number-input-wrap h-2/5 px-8 flex items-center space-x-4">
-          <div class="number-cell w-1/5 h-4/6 p-3 bg-black bg-opacity-10 rounded-full flex flex-col items-center justify-between text-xl font-semibold"
+          <div class="number-cell min-w-1/5 w-1/5 h-4/6 p-3 bg-black bg-opacity-10 rounded-full flex flex-col items-center justify-between text-xl font-semibold"
             :class="{'inputed': !!sortedArr[index - 1]}"
             v-for="index of len" :key="index">
             <p>{{sortedArr[index - 1]}}</p>
@@ -19,7 +19,7 @@
           </div>
         </div>
     </div>
-    <div class="number-choose-wrap h-3/5 bg-white rounded-3xl rounded-b-none">
+    <div class="number-choose-wrap h-3/5 bg-white rounded-3xl rounded-b-none enter-y">
       <div class="w-full h-full p-8 rounded-3xl shadow">
           <div class="flex justify-between">
             <span class="text-xl font-semibold">{{time}}</span>
@@ -60,7 +60,7 @@ export default defineComponent({
       const len = ref(5);
       const end = 30;
       const numbers: any = ref([]);
-      const time: any = ref(moment().format('HH:mm:ss'));
+      const time: any = ref(moment().format('HH:mm'));
 
       const sortedArr = computed(() => {
         return numbers.value.sort((a,b)=>{
@@ -69,7 +69,7 @@ export default defineComponent({
       });
 
       const timer = setInterval(() => { 
-        time.value = moment().format('HH:mm:ss')
+        time.value = moment().format('HH:mm')
       }, 1000);
 
       function random(index) {

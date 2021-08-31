@@ -3,7 +3,6 @@ node_modules
 dist
 .npmrc
 .cache
-anwang_client.tar
 test/upload-server/static
 
 .local
@@ -26,3 +25,5 @@ pnpm-debug.log*
 *.sln
 *.sw?
 .vscode/
+
+android

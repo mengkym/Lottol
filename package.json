@@ -7,8 +7,13 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "@capacitor/android": "^3.2.0",
+    "@capacitor/cli": "^3.2.0",
+    "@capacitor/core": "^3.2.0",
+    "@capacitor/status-bar": "^1.0.2",
     "less": "^4.1.1",
     "less-loader": "^10.0.1",
+    "moment": "^2.29.1",
     "ts-import-plugin": "^1.6.7",
     "vant": "^3.2.1",
     "vue": "^3.2.6",
