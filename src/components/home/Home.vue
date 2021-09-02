@@ -77,10 +77,11 @@ export default defineComponent({
         for(var i = 0; i < end; i++){
           ary[i] = i+1;
         }
+        ary.sort(function(){
+        　　return 0.5 - Math.random();
+        });
         for(var i = 0; i < len.value ; i++) {
-          let id = 0;
-          id = Math.ceil(Math.random() * end - 1);
-          numbers.value[i] = ary[id];
+          numbers.value[i] = ary[i];
         }   
       }
 

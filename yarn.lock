@@ -84,6 +84,11 @@
   dependencies:
     tslib "^2.1.0"
 
+"@capacitor/splash-screen@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@capacitor/splash-screen/-/splash-screen-1.1.2.tgz#7f94e8f0b7355b13bc75335efed789d9a5b4cd67"
+  integrity sha512-LWI40hYAdce/3Nniuerz+18y8jaLI+qJyPf8dzBmM1FYXeTXGq0uP+FG4S/MqeBFxm6fVANq2lIMSWwwKzWnSQ==
+
 "@capacitor/status-bar@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@capacitor/status-bar/-/status-bar-1.0.2.tgz#b432403bab8ff5dc4b4f013c35aa1f85cc0651c8"
